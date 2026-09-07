@@ -13,7 +13,7 @@
 
     <body>
 
-        <main class="page">
+        <main class="screens">
 
             <!-- ==================================================
                 PANTALLA DE INICIO
@@ -29,10 +29,7 @@
                             🦴
                         </span>
 
-                        <p class="system_label">
-                            BIRTHDAY GIFT SYSTEM v1.0
-                        </p>
-
+                        
                         <h1>
                             regalito
                         </h1>
@@ -43,16 +40,16 @@
                             <span>(bueeeno, no exactamente)</span>
                         </p>
 
-                        <a href="#welcome" class="button">
+                        <button type="button" class="button" data-next="welcome">
                             INICIAR SISTEMA
-                        </a>
+                        </button>
 
                     </div>
 
                     <div class="home_image">
 
                         <img
-                            src=""
+                            src="docs/nigredo-dog-1305702_640.png"
                             alt="Perrito esperando su regalo"
                         >
 
@@ -100,9 +97,9 @@
 
                     </div>
 
-                    <a href="#budget" class="button">
+                    <button type="button" class="button" data-next="budget">
                         CONSULTAR RECOMENDACIONES
-                    </a>
+                    </button>
 
                 </div>
 
@@ -418,7 +415,7 @@
                     </p>
 
                     <h2>
-                        ¿Cuánto estamos dispuestos a caer en la bolucompra?
+                        Nivel de bolucompra
                     </h2>
 
                     <p class="question_description">
@@ -575,9 +572,9 @@
                         ¿Está seguro/a de continuar?
                     </p>
 
-                    <a href="#results" class="button">
+                    <button type="button" class="button" data-next="results">
                         VER RESULTADOS
-                    </a>
+                    </button>
 
                 </div>
 
@@ -586,25 +583,26 @@
 
             <!-- =========================
                 RESULTADOS
-            ========================= -->
+            ========================== -->
 
-            <section id="results" class="screen results_screen">
+            <section class="screen screen-results" id="results">
 
                 <div class="results_container">
 
-                    <!-- Encabezado -->
                     <header class="results_header">
 
-                        <p class="eyebrow">
+                        <p class="section_label">
                             RESULTADOS
                         </p>
 
                         <h2>
                             El sistema analizó
-                            <strong id="product-count">0 productos</strong>
+                            <strong id="product-count">
+                                0 productos
+                            </strong>
                         </h2>
 
-                        <p class="results_intro">
+                        <p>
                             Según tus preferencias, estas son las opciones
                             que mejor coinciden con lo que estás buscando.
                         </p>
@@ -612,318 +610,320 @@
                     </header>
 
 
-                    <!-- =========================
-                        RECOMENDACIÓN #1
-                    ========================== -->
+                    <div class="recommendations">
 
-                    <article class="recommendation recommendation_primary">
 
-                                <p class="recommendation_number">
-                                    RECOMENDACIÓN #1
-                                </p>
+                        <!-- =========================
+                            RECOMENDACIÓN #1
+                        ========================== -->
 
-                                <div class="product_image">
+                        <article
+                            id="recommendation-1"
+                            class="recommendation recommendation_primary"
+                        >
 
-                                    <img
-                                        id="product-image-1"
-                                        src=""
-                                        alt=""
-                                    >
+                            <p class="recommendation_number">
+                                RECOMENDACIÓN #1
+                            </p>
 
-                                </div>
 
+                            <div class="product_image">
 
-                                <div class="product_info">
-
-                                    <h3 id="product-name-1">
-                                        Producto recomendado
-                                    </h3>
-
-
-                                    <div class="gift_score">
-
-                                        <span>
-                                            GIFT SCORE
-                                        </span>
-
-                                        <strong id="gift-score-1">
-                                            0
-                                        </strong>
-
-                                        <span>
-                                            / 100
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="metrics">
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Diversión
-                                            </span>
-
-                                            <strong id="fun-score-1">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Bolucompra
-                                            </span>
-
-                                            <strong id="bolu-score-1">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Prioridad
-                                            </span>
-
-                                            <strong id="priority-score-1">
-                                                0
-                                            </strong>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="diagnosis">
-
-                                    <p class="diagnosis_title">
-                                        DIAGNÓSTICO
-                                    </p>
-
-                                    <p>
-                                        El algoritmo encontró una coincidencia
-                                        entre tus preferencias y este producto.
-                                    </p>
-
-                                </div>
-
-                            </article>
-
-
-
-                            <!-- =========================
-                                RECOMENDACIÓN #2
-                            ========================== -->
-
-                            <article class="recommendation">
-
-                                <p class="recommendation_number">
-                                    RECOMENDACIÓN #2
-                                </p>
-
-
-                                <div class="product_image">
-
-                                    <img
-                                        id="product-image-2"
-                                        src=""
-                                        alt=""
-                                    >
-
-                                </div>
-
-
-                                <div class="product_info">
-
-                                    <h3 id="product-name-2">
-                                        Producto recomendado
-                                    </h3>
-
-
-                                    <div class="gift_score">
-
-                                        <span>
-                                            GIFT SCORE
-                                        </span>
-
-                                        <strong id="gift-score-2">
-                                            0
-                                        </strong>
-
-                                        <span>
-                                            / 100
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="metrics">
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Diversión
-                                            </span>
-
-                                            <strong id="fun-score-2">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Bolucompra
-                                            </span>
-
-                                            <strong id="bolu-score-2">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Prioridad
-                                            </span>
-
-                                            <strong id="priority-score-2">
-                                                0
-                                            </strong>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </article>
-
-
-
-                            <!-- =========================
-                                RECOMENDACIÓN #3
-                            ========================== -->
-
-                            <article class="recommendation">
-
-                                <p class="recommendation_number">
-                                    RECOMENDACIÓN #3
-                                </p>
-
-
-                                <div class="product_image">
-
-                                    <img
-                                        id="product-image-3"
-                                        src=""
-                                        alt=""
-                                    >
-
-                                </div>
-
-
-                                <div class="product_info">
-
-                                    <h3 id="product-name-3">
-                                        Producto recomendado
-                                    </h3>
-
-
-                                    <div class="gift_score">
-
-                                        <span>
-                                            GIFT SCORE
-                                        </span>
-
-                                        <strong id="gift-score-3">
-                                            0
-                                        </strong>
-
-                                        <span>
-                                            / 100
-                                        </span>
-
-                                    </div>
-
-
-                                    <div class="metrics">
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Diversión
-                                            </span>
-
-                                            <strong id="fun-score-3">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Bolucompra
-                                            </span>
-
-                                            <strong id="bolu-score-3">
-                                                0%
-                                            </strong>
-
-                                        </div>
-
-
-                                        <div class="metric">
-
-                                            <span>
-                                                Prioridad
-                                            </span>
-
-                                            <strong id="priority-score-3">
-                                                0
-                                            </strong>
-
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </article>
-
-
-                            <!-- =========================
-                                ACCIONES
-                            ========================== -->
-
-                            <div class="results_actions">
-
-                                <a
-                                    href="#home"
-                                    class="button"
+                                <img
+                                    id="product-image-1"
+                                    src=""
+                                    alt=""
                                 >
-                                    VOLVER AL INICIO
-                                </a>
 
                             </div>
 
-                        </div>
 
-                    </section>
+                            <div class="product_info">
+
+                                <h3 id="product-name-1">
+                                    Producto recomendado
+                                </h3>
+
+
+                                <div class="gift_score">
+
+                                    <span>
+                                        GIFT SCORE
+                                    </span>
+
+                                    <strong id="gift-score-1">
+                                        0
+                                    </strong>
+
+                                    <span>
+                                        / 100
+                                    </span>
+
+                                </div>
+
+
+                                <div class="metrics">
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Diversión
+                                        </span>
+
+                                        <strong id="fun-score-1">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Bolucompra
+                                        </span>
+
+                                        <strong id="bolu-score-1">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Prioridad
+                                        </span>
+
+                                        <strong id="priority-score-1">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            
+
+                        </article>
+
+
+
+                        <!-- =========================
+                            RECOMENDACIÓN #2
+                        ========================== -->
+
+                        <article
+                            id="recommendation-2"
+                            class="recommendation"
+                        >
+
+                            <p class="recommendation_number">
+                                RECOMENDACIÓN #2
+                            </p>
+
+
+                            <div class="product_image">
+
+                                <img
+                                    id="product-image-2"
+                                    src=""
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="product_info">
+
+                                <h3 id="product-name-2">
+                                    Producto recomendado
+                                </h3>
+
+
+                                <div class="gift_score">
+
+                                    <span>
+                                        GIFT SCORE
+                                    </span>
+
+                                    <strong id="gift-score-2">
+                                        0
+                                    </strong>
+
+                                    <span>
+                                        / 100
+                                    </span>
+
+                                </div>
+
+
+                                <div class="metrics">
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Diversión
+                                        </span>
+
+                                        <strong id="fun-score-2">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Bolucompra
+                                        </span>
+
+                                        <strong id="bolu-score-2">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Prioridad
+                                        </span>
+
+                                        <strong id="priority-score-2">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+
+
+                        <!-- =========================
+                            RECOMENDACIÓN #3
+                        ========================== -->
+
+                        <article
+                            id="recommendation-3"
+                            class="recommendation"
+                        >
+
+                            <p class="recommendation_number">
+                                RECOMENDACIÓN #3
+                            </p>
+
+
+                            <div class="product_image">
+
+                                <img
+                                    id="product-image-3"
+                                    src=""
+                                    alt=""
+                                >
+
+                            </div>
+
+
+                            <div class="product_info">
+
+                                <h3 id="product-name-3">
+                                    Producto recomendado
+                                </h3>
+
+
+                                <div class="gift_score">
+
+                                    <span>
+                                        GIFT SCORE
+                                    </span>
+
+                                    <strong id="gift-score-3">
+                                        0
+                                    </strong>
+
+                                    <span>
+                                        / 100
+                                    </span>
+
+                                </div>
+
+
+                                <div class="metrics">
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Diversión
+                                        </span>
+
+                                        <strong id="fun-score-3">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Bolucompra
+                                        </span>
+
+                                        <strong id="bolu-score-3">
+                                            0%
+                                        </strong>
+
+                                    </div>
+
+
+                                    <div class="metric">
+
+                                        <span>
+                                            Prioridad
+                                        </span>
+
+                                        <strong id="priority-score-3">
+                                            0
+                                        </strong>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                        <!-- =========================
+                          ACCIONES
+                        ========================== -->
+
+                        <div class="results_actions">
+                        <button
+                            type="button"
+                            class="button"
+                            data-next="home"
+                        >
+                            VOLVER AL INICIO
+                        </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
                  
 
         </main>

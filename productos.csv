@@ -1,21 +1,21 @@
-id,producto,categoria,precio,prioridad,diversion,bolucompra
-1,Collar personalizado con su nombre,Arneses,8500,3,2,2
-2,Peluche de lobo,Juguetes,50000,1,4,4
-3,Pack de snacks premium,Snacks,9500,4,2,1
-4,Remera personalizada,Ropa,15000,3,4,3
-5,Capa de superhéroe,Ropa,18000,1,4,4
-6,Pelota dispensadora de premios,Juguetes,13500,4,4,2
-7,Arnés acolchado cómodo,Arneses,22000,4,2,1
-8,Moño elegante para ocasiones especiales,Ropa,6000,2,3,3
-9,Galletitas caseras para perros,Snacks,7000,3,3,2
-10,Juguete con forma de pizza,Juguetes,11000,1,4,4
-11,Buzo personalizado,Ropa,28000,4,2,2
-12,Correa multicolor,Arneses,14000,3,3,2
-13,Sombrero de cumpleaños,Ropa,5000,1,4,4
-14,Alfombra olfativa,Juguetes,25000,4,4,2
-15,Pack de huesitos masticables,Snacks,8500,3,2,1
-16,Disfraz de dinosaurio,Ropa,21000,1,4,4
-17,Juguete con forma de banana,Juguetes,9000,1,4,4
-18,Chapa identificatoria personalizada,Arneses,7500,4,2,1
-19,Pack de snacks sorpresa,Snacks,12000,2,4,3
-20,Disfraz de cumpleaños,Ropa,17000,2,4,3
+id,producto,categoria,precio,prioridad,diversion,bolucompra,img
+1,Collar personalizado con su nombre,arneses,8500,3,2,2,docs/collar-personalizado.png
+2,Peluche,juguetes,50000,1,4,4,docs/peluche.png
+3,Pack de snacks premium,snacks,9500,4,2,1,docs/pack-snacks-premium.png
+4,Remera personalizada,ropa,15000,3,4,3,docs/remera-personalizada.png
+5,Capa de superhéroe,ropa,18000,1,4,4,docs/capa-superheroe.png
+6,Pelota dispensadora de premios,juguetes,13500,4,4,2,docs/pelota-dispensadora-premios.png
+7,Arnés acolchado cómodo,arneses,22000,4,2,1,docs/arnes-acolchado-comodo.png
+8,Ropa elegante para ocasiones especiales,ropa,6000,2,3,3,docs/ropa-elegante.png
+9,Galletitas para perros,snacks,7000,3,3,2,docs/galletitas-perros.png
+10,Pelota,juguetes,11000,1,4,4,docs/pelota.png
+11,Buzo personalizado,ropa,28000,4,2,2,docs/buzo-personalizado.png
+12,Correa multicolor,arneses,14000,3,3,2,docs/correa-multicolor.png
+13,Sombrero de cumpleaños,ropa,5000,1,4,4,docs/sombrero-cumpleanos.png
+14,Alfombra olfativa,juguetes,25000,4,4,2,docs/alfombra-olfativa.png
+15,Pack de huesitos masticables,snacks,8500,3,2,1,docs/pack-huesitos-masticables.png
+16,Disfraz,ropa,21000,1,4,4,docs/disfraz.png
+17,Squishy,juguetes,9000,1,4,4,docs/squishy.png
+18,Chapa identificatoria personalizada,arneses,7500,4,2,1,docs/chapa-identificatoria.png
+19,Pack de snacks sorpresa,snacks,12000,2,4,3,docs/pack-snacks-sorpresa.png
+20,Disfraz de cumpleaños,ropa,17000,2,4,3,docs/disfraz-cumpleanos.png
