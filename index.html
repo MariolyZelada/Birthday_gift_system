@@ -1,59 +1,1027 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Gift System</title>
 
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body>
+        <title>Birthday Gift System</title>
 
-    <main class="page">
-        <h1 class="page__title">Birthday Gift System</h1>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer_content">
-                <div class="footer_intro">
-                    <div class="footer_brand">
-                    <a href="#" class="footer_logo">MZ</a>
-                    <div class="footer_name">
-                        <p><Strong>Marioly Zelada</Strong></p>
-                        <p>Computer Engineer</p>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+
+        <main class="page">
+
+            <!-- ==================================================
+                PANTALLA DE INICIO
+            =================================================== -->
+
+            <section class="screen screen-home" id="home">
+
+                <div class="home_content">
+
+                    <div class="home_text">
+
+                        <span class="system_icon" aria-hidden="true">
+                            🦴
+                        </span>
+
+                        <p class="system_label">
+                            BIRTHDAY GIFT SYSTEM v1.0
+                        </p>
+
+                        <h1>
+                            regalito
+                        </h1>
+
+                        <p class="home_description">
+                            Porque elegir un regalo para un cumpleaños
+                            claramente requería inteligencia artificial...
+                            <span>(bueeeno, no exactamente)</span>
+                        </p>
+
+                        <a href="#welcome" class="button">
+                            INICIAR SISTEMA
+                        </a>
+
                     </div>
-                    
-                </div>  
-                <p class="footer_tagline">Más ingeniería de la necesaria para elegir unos regalitos.</p> 
+
+                    <div class="home_image">
+
+                        <img
+                            src=""
+                            alt="Perrito esperando su regalo"
+                        >
+
+                    </div>
+
                 </div>
-                
-                <nav class="footer_nav">
-                    <p><strong>Sitio Web</strong></p>
 
-                    <ul class="footer_menu">
-                        <li class="footer_item">
-                            <a href="#">Inicio</a>
-                        </li>
+            </section>
 
-                        <li class="footer_item">
-                            <a href="">Recomendador</a>
-                        </li>
 
-                        <li class="footer_item">
-                            <a href="">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
+            <!-- ==================================================
+                BIENVENIDA
+            =================================================== -->
+
+            <section class="screen screen-welcome" id="welcome">
+
+                <div class="screen_content">
+
+                    <p class="step_label">
+                        SYSTEM INITIALIZATION
+                    </p>
+
+                    <h2>
+                        Bienvenido/a al sistema
+                    </h2>
+
+                    <p>
+                        Para encontrar el regalo adecuado necesitamos
+                        algunos datos.
+                    </p>
+
+                    <p>
+                        Y probablemente más infraestructura de la necesaria.
+                    </p>
+
+                    <div class="processing_info">
+
+                        <span>
+                            Tiempo estimado de procesamiento
+                        </span>
+
+                        <strong>
+                            38 segundos
+                        </strong>
+
+                    </div>
+
+                    <a href="#budget" class="button">
+                        CONSULTAR RECOMENDACIONES
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                PREGUNTA 01 — PRESUPUESTO
+            =================================================== -->
+
+            <section class="screen question_screen" id="budget">
+
+                <div class="question_content">
+
+                    <div class="progress">
+
+                        <span>01 / 05</span>
+
+                        <div class="progress_bar">
+                            <div class="progress_value progress_20"></div>
+                        </div>
+
+                    </div>
+
+                    <p class="step_label">
+                        PARAMETER 01
+                    </p>
+
+                    <h2>
+                        ¿Cuál es el presupuesto disponible?
+                    </h2>
+
+                    <p class="question_description">
+                        El sistema necesita conocer los recursos
+                        disponibles para evitar decisiones financieramente cuestionables.
+                    </p>
+
+                    <fieldset class="options">
+
+                        <legend class="sr_only">
+                            Seleccioná un presupuesto
+                        </legend>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="presupuesto"
+                                value="1"
+                            >
+                            <span>
+                                Estamos a fin de mes
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="presupuesto"
+                                value="2"
+                            >
+                            <span>
+                                Presupuesto tranqui
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="presupuesto"
+                                value="3"
+                            >
+                            <span>
+                                Presupuesto razonable
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="presupuesto"
+                                value="4"
+                            >
+                            <span>
+                                Hoy me levanté generoso/a
+                            </span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="button" class="button" data-next="category" disabled>
+                        CONTINUAR
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                PREGUNTA 02 — CATEGORÍA
+            =================================================== -->
+
+            <section class="screen question_screen" id="category">
+
+                <div class="question_content">
+
+                    <div class="progress">
+
+                        <span>02 / 05</span>
+
+                        <div class="progress_bar">
+                            <div class="progress_value progress_40"></div>
+                        </div>
+
+                    </div>
+
+                    <p class="step_label">
+                        PARAMETER 02
+                    </p>
+
+                    <h2>
+                        ¿Qué estamos buscando?
+                    </h2>
+
+                    <p class="question_description">
+                        Definamos el área de investigación.
+                    </p>
+
+                    <fieldset class="options">
+
+                        <legend class="sr_only">
+                            Seleccioná una categoría
+                        </legend>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="categoria"
+                                value="ropa"
+                            >
+                            <span>
+                                👕 ropa
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="categoria"
+                                value="juguetes"
+                            >
+                            <span>
+                                🧸 juguetes
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="categoria"
+                                value="snacks"
+                            >
+                            <span>
+                                🦴 snacks
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="categoria"
+                                value="arneses"
+                            >
+                            <span>
+                                🐕 arneses
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="categoria"
+                                value="sorpresa"
+                            >
+                            <span>
+                                ✨ Sorprendeme
+                            </span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="button" class="button" data-next="fun" disabled>
+                        CONTINUAR
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                PREGUNTA 03 — DIVERSIÓN
+            =================================================== -->
+
+            <section class="screen question_screen" id="fun">
+
+                <div class="question_content">
+
+                    <div class="progress">
+
+                        <span>03 / 05</span>
+
+                        <div class="progress_bar">
+                            <div class="progress_value progress_60"></div>
+                        </div>
+
+                    </div>
+
+                    <p class="step_label">
+                        PARAMETER 03
+                    </p>
+
+                    <h2>
+                        ¿Qué tan divertido debería ser?
+                    </h2>
+
+                    <p class="question_description">
+                        Medimos el potencial de entretenimiento
+                        porque claramente esto es información crítica.
+                    </p>
+
+                    <fieldset class="options">
+
+                        <legend class="sr_only">
+                            Seleccioná el nivel de diversión
+                        </legend>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="diversion"
+                                value="1"
+                            >
+                            <span>
+                                Tranqui
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="diversion"
+                                value="2"
+                            >
+                            <span>
+                                Divertido
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="diversion"
+                                value="3"
+                            >
+                            <span>
+                                Muy divertido
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="diversion"
+                                value="4"
+                            >
+                            <span>
+                                Diversión extrema
+                            </span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="button" class="button" data-next="bolucompra" disabled>
+                        CONTINUAR
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                PREGUNTA 04 — BOLUCOMPRA
+            =================================================== -->
+
+            <section class="screen question_screen" id="bolucompra">
+
+                <div class="question_content">
+
+                    <div class="progress">
+
+                        <span>04 / 05</span>
+
+                        <div class="progress_bar">
+                            <div class="progress_value progress_80"></div>
+                        </div>
+
+                    </div>
+
+                    <p class="step_label">
+                        PARAMETER 04
+                    </p>
+
+                    <h2>
+                        ¿Cuánto estamos dispuestos a caer en la bolucompra?
+                    </h2>
+
+                    <p class="question_description">
+                        Este parámetro es fundamental para determinar
+                        cuánto estamos dispuestos a comprar algo que
+                        probablemente no necesitamos.
+                    </p>
+
+                    <fieldset class="options">
+
+                        <legend class="sr_only">
+                            Seleccioná el nivel de bolucompra
+                        </legend>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="bolucompra"
+                                value="1"
+                            >
+                            <span>
+                                Compra sensata
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="bolucompra"
+                                value="2"
+                            >
+                            <span>
+                                Un gustito
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="bolucompra"
+                                value="3"
+                            >
+                            <span>
+                                ¿Es necesario?
+                            </span>
+                        </label>
+
+                        <label class="option">
+                            <input
+                                type="radio"
+                                name="bolucompra"
+                                value="4"
+                            >
+                            <span>
+                                Bolucompra premium
+                            </span>
+                        </label>
+
+                    </fieldset>
+
+                    <button type="button" class="button" data-next="processing" disabled>
+                        CONTINUAR
+                    </button>
+
+                </div>
+
+            </section>
+
+            <!-- ==================================================
+                PROCESAMIENTO
+            =================================================== -->
+
+            <section class="screen screen-processing" id="processing">
+
+                <div class="processing_content">
+
+                    <span class="system_icon" aria-hidden="true">
+                        🦴
+                    </span>
+
+                    <p class="step_label">
+                        SYSTEM PROCESSING
+                    </p>
+
+                    <h2>
+                        ANALIZANDO SOLICITUD...
+                    </h2>
+
+                    <p>
+                        Ejecutando algoritmo completamente innecesario…
+                    </p>
+
+                    <div class="loader">
+
+                        <div class="loader_bar"></div>
+
+                    </div>
+
+                    <div class="processing_messages">
+
+                        <p>
+                            ✓ Analizando preferencias...
+                        </p>
+
+                        <p>
+                            ✓ Comparando productos...
+                        </p>
+
+                        <p>
+                            ✓ Calculando Gift Score...
+                        </p>
+
+                        <p>
+                            ✓ Evaluando nivel de bolucompra...
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ==================================================
+                ADVERTENCIA
+            =================================================== -->
+
+            <section class="screen screen-warning" id="warning">
+
+                <div class="warning_content">
+
+                    <span class="system_icon" aria-hidden="true">
+                        🦴
+                    </span>
+
+                    <p class="step_label">
+                        SYSTEM ALERT
+                    </p>
+
+                    <h2>
+                        ADVERTENCIA
+                    </h2>
+
+                    <p>
+                        El sistema detectó que esta decisión
+                        podría haber sido resuelta sin inteligencia artificial.
+                    </p>
+
+                    <p>
+                        Sin embargo, ya llegamos demasiado lejos.
+                    </p>
+
+                    <p class="warning_question">
+                        ¿Está seguro/a de continuar?
+                    </p>
+
+                    <a href="#results" class="button">
+                        VER RESULTADOS
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================
+                RESULTADOS
+            ========================= -->
+
+            <section id="results" class="screen results_screen">
+
+                <div class="results_container">
+
+                    <!-- Encabezado -->
+                    <header class="results_header">
+
+                        <p class="eyebrow">
+                            RESULTADOS
+                        </p>
+
+                        <h2>
+                            El sistema analizó
+                            <strong id="product-count">0 productos</strong>
+                        </h2>
+
+                        <p class="results_intro">
+                            Según tus preferencias, estas son las opciones
+                            que mejor coinciden con lo que estás buscando.
+                        </p>
+
+                    </header>
+
+
+                    <!-- =========================
+                        RECOMENDACIÓN #1
+                    ========================== -->
+
+                    <article class="recommendation recommendation_primary">
+
+                                <p class="recommendation_number">
+                                    RECOMENDACIÓN #1
+                                </p>
+
+                                <div class="product_image">
+
+                                    <img
+                                        id="product-image-1"
+                                        src=""
+                                        alt=""
+                                    >
+
+                                </div>
+
+
+                                <div class="product_info">
+
+                                    <h3 id="product-name-1">
+                                        Producto recomendado
+                                    </h3>
+
+
+                                    <div class="gift_score">
+
+                                        <span>
+                                            GIFT SCORE
+                                        </span>
+
+                                        <strong id="gift-score-1">
+                                            0
+                                        </strong>
+
+                                        <span>
+                                            / 100
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="metrics">
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Diversión
+                                            </span>
+
+                                            <strong id="fun-score-1">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Bolucompra
+                                            </span>
+
+                                            <strong id="bolu-score-1">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Prioridad
+                                            </span>
+
+                                            <strong id="priority-score-1">
+                                                0
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="diagnosis">
+
+                                    <p class="diagnosis_title">
+                                        DIAGNÓSTICO
+                                    </p>
+
+                                    <p>
+                                        El algoritmo encontró una coincidencia
+                                        entre tus preferencias y este producto.
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =========================
+                                RECOMENDACIÓN #2
+                            ========================== -->
+
+                            <article class="recommendation">
+
+                                <p class="recommendation_number">
+                                    RECOMENDACIÓN #2
+                                </p>
+
+
+                                <div class="product_image">
+
+                                    <img
+                                        id="product-image-2"
+                                        src=""
+                                        alt=""
+                                    >
+
+                                </div>
+
+
+                                <div class="product_info">
+
+                                    <h3 id="product-name-2">
+                                        Producto recomendado
+                                    </h3>
+
+
+                                    <div class="gift_score">
+
+                                        <span>
+                                            GIFT SCORE
+                                        </span>
+
+                                        <strong id="gift-score-2">
+                                            0
+                                        </strong>
+
+                                        <span>
+                                            / 100
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="metrics">
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Diversión
+                                            </span>
+
+                                            <strong id="fun-score-2">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Bolucompra
+                                            </span>
+
+                                            <strong id="bolu-score-2">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Prioridad
+                                            </span>
+
+                                            <strong id="priority-score-2">
+                                                0
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+
+                            <!-- =========================
+                                RECOMENDACIÓN #3
+                            ========================== -->
+
+                            <article class="recommendation">
+
+                                <p class="recommendation_number">
+                                    RECOMENDACIÓN #3
+                                </p>
+
+
+                                <div class="product_image">
+
+                                    <img
+                                        id="product-image-3"
+                                        src=""
+                                        alt=""
+                                    >
+
+                                </div>
+
+
+                                <div class="product_info">
+
+                                    <h3 id="product-name-3">
+                                        Producto recomendado
+                                    </h3>
+
+
+                                    <div class="gift_score">
+
+                                        <span>
+                                            GIFT SCORE
+                                        </span>
+
+                                        <strong id="gift-score-3">
+                                            0
+                                        </strong>
+
+                                        <span>
+                                            / 100
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="metrics">
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Diversión
+                                            </span>
+
+                                            <strong id="fun-score-3">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Bolucompra
+                                            </span>
+
+                                            <strong id="bolu-score-3">
+                                                0%
+                                            </strong>
+
+                                        </div>
+
+
+                                        <div class="metric">
+
+                                            <span>
+                                                Prioridad
+                                            </span>
+
+                                            <strong id="priority-score-3">
+                                                0
+                                            </strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </article>
+
+
+                            <!-- =========================
+                                ACCIONES
+                            ========================== -->
+
+                            <div class="results_actions">
+
+                                <a
+                                    href="#home"
+                                    class="button"
+                                >
+                                    VOLVER AL INICIO
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+                 
+
+        </main>
+
+
+        <!-- ======================================================
+            FOOTER
+        ======================================================= -->
+
+        <footer class="footer">
+
+            <div class="container">
+
+                <div class="footer_content">
+
+                    <div class="footer_intro">
+
+                        <div class="footer_brand">
+
+                            <a href="#home" class="footer_logo">
+                                MZ
+                            </a>
+
+                            <div class="footer_name">
+
+                                <p>
+                                    <strong>
+                                        Marioly Zelada
+                                    </strong>
+                                </p>
+
+                                <p>
+                                    Computer Engineer
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <p class="footer_tagline">
+                            Más ingeniería de la necesaria para elegir
+                            unos regalitos.
+                        </p>
+
+                    </div>
+
+
+                    <nav class="footer_nav" aria-label="Navegación del sitio">
+
+                        <p>
+                            <strong>
+                                Sitio Web
+                            </strong>
+                        </p>
+
+                        <ul class="footer_menu">
+
+                            <li class="footer_item">
+                                <a href="#home">
+                                    Inicio
+                                </a>
+                            </li>
+
+                            <li class="footer_item">
+                                <a href="#welcome">
+                                    Recomendador
+                                </a>
+                            </li>
+
+                            <li class="footer_item">
+                                <a href="#">
+                                    Contacto
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+                <hr class="footer_divider">
+
+
+                <div class="footer_copyright">
+
+                    <p>
+                        © 2026 Marioly Zelada.
+                        Todos los derechos reservados.
+                    </p>
+
+                </div>
+
             </div>
-            
-            <hr class="footer_divider">
-            
-            <div class="footer_copyright">
-                <p>© 2026 Marioly Zelada. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
 
-</body>
+        </footer>
+
+
+    </body>
 </html>
